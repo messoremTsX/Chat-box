@@ -1,0 +1,202 @@
+/* Style global*/
+    .chat-container {
+        position: relative;
+    }
+    .chat-box {
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        max-height: 80vh;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .chat-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        background-color: var(--background-nav-color);
+        color: var(--color);
+        font-size: 80%;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+    }
+    .chat-header h2{
+        margin-left: 5%;
+    }
+    .chat-body {
+        height: 70%;
+        max-height: 50vh;
+        min-height: 50vh;
+        overflow: auto;
+        padding: 10px;
+    }
+    .chat-logs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .chat-footer {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: var(--background-nav-color2);
+    }
+    .chat-footer form{
+        display: flex;
+        flex: 1;
+    }
+    .chat-footer input[type="text"] {
+        padding: .5em 1em;
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+    }
+/* button */
+    .config-btn {
+        background-color: #4CAF50;
+        color: var(--color);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+    .config-btn:hover{
+        background-color: var(--primary);
+        transition: all 1s ease-in-out;
+    }
+    .send-btn {
+        background-color: var(--background-nav-color);
+        color: var(--color);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        white-space: nowrap;
+        cursor: pointer;
+        margin: 0 0 0 1rem;
+        flex: 0;
+    }
+    .send-btn:hover{
+        background-color: var(--info);
+        transition: all 0.5s ease-in-out;
+    }
+    .load-more-btn{
+        display: flex;
+        justify-content: center;
+        color: black;
+        cursor: pointer;
+
+    }
+    .scroll-to-bottom-button {
+        position: absolute;
+        bottom: 7%;
+        right: 5%;
+        z-index: 9999;
+        display: none;
+        background-color: var(--background-nav-color);
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: translateY(50%);
+        opacity: 0.7;
+    }
+      
+    .scroll-to-bottom-button:hover {
+        opacity: 1;
+    }
+/* message */
+    .message {
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: row;
+        align-items: center;
+    } 
+    .received {
+        justify-content: flex-start;
+        color: var(--color);
+    }
+    .received p {
+        background-color: var(--success);
+    } 
+    .sent {
+        justify-content: flex-end;
+        color: var(--color);
+    }
+    .sent p {
+        background-color: var(--primary);
+    } 
+    .message p {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 200px;
+        margin-left: 1%;
+    }
+/* user image */
+    .chat-logo img{
+        height: 50px;
+        width: auto;
+    } 
+    .chat-name{
+        font-size: 14px;
+        color: var(--color);
+        margin-bottom: 5px;
+        margin-bottom: 1%;
+    }
+/* time */
+    .time {
+        font-size: 12px;
+        color: var(--color);
+        margin-top: 5px;
+    }
+/* Style The Dropdown Button */
+    .dropbtn {
+        background-color: var(--success);
+        color: var(--color);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: var(--background-nav-color2);}
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: var(--success);;
+    }

@@ -1,0 +1,16 @@
+/*Variable color*/
+:root{
+    --background-color: #4e4e50;
+    --background-color2: #f1f1f1;
+    --background-nav-color: #1a1a1d;
+
+    --background-button: #950740;
+    --background-button-hover: #c3073f;
+    --color-button: rgba(219, 217, 217, 0.938);
+
+    --color: aliceblue;
+    --primary: #0d6efd;
+    --info: #0dcaf0;
+    --success: #1ca54c;
+    --main-dark: darken(#1ab188,5%);
+}
